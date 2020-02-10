@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+  <test name = "Amazon">
+   <parameter name = "url" value = "https://www.amazon.in./"/>
+    <classes>
+        <class name = "generic.BrowserFunction">
+        </class> 
+    </classes>
+ </test>
+ 
+ <test name = "GetPrice">
+    <classes>
+        <class name = "script.GetPrice">
+        </class> 
+    </classes>
+ </test>
+</suite> <!-- Suite -->
