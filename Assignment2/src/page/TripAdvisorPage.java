@@ -64,7 +64,6 @@ public class TripAdvisorPage extends BrowserFunction {
 		else {
 			searchTextbox.click();
 		}
-		
 	}
 	
 	public void searchTrip(String text) throws InterruptedException {
@@ -91,16 +90,18 @@ public class TripAdvisorPage extends BrowserFunction {
 		reviewTitle.sendKeys("This is title review section");
 	}
 	
-	public void hotelRating() {
+	public void hotelRating() throws InterruptedException {
 		if(hotelRating.size() > 0) {
 			wait.until(ExpectedConditions.visibilityOf(serviceRating));
 			actions.moveToElement(serviceRating,50,0).click().perform();
-		}
-			
+			Thread.sleep(3000);
+		}	
 	}
 	
-	public void submitYourReviewCheckbox() {
+	public void clickSubmitYourReviewCheckbox() throws InterruptedException {
 		actions.moveToElement(submitYourReviewCheckbox).click().perform();;
+		Thread.sleep(5000);
 	}
-
+	
+	
 }

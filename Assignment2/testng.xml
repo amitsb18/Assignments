@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="Suite">
   <test name = "browserfunction">
     <classes>
@@ -9,9 +8,9 @@
     </classes>
  </test>
  
- <test name = "GetPrice">
+ <test name = "tripadvisor">
     <classes>
-        <class name = "script.GetPrice">
+        <class name = "script.TripAdvisor">
         </class> 
     </classes>
  </test>

@@ -17,7 +17,8 @@ public class TripAdvisor extends BrowserFunction{
 		
 		TripAdvisorPage trip = new TripAdvisorPage(driver);
 		trip.clickSearchTextbox();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		trip.searchTrip("Club Mahindra");
 		trip.selectFirstResult();
 		
@@ -35,10 +36,9 @@ public class TripAdvisor extends BrowserFunction{
 	    
 	    trip.hotelRating();
 	    
-	    trip.submitYourReviewCheckbox();
+	    trip.clickSubmitYourReviewCheckbox();
 	    
-	    
-		
+	    closeBrowser();
 	}
 	
 
