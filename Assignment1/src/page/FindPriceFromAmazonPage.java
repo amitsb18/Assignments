@@ -16,7 +16,7 @@ public class FindPriceFromAmazonPage {
 	@FindBy(id = "twotabsearchtextbox")
 	private WebElement searchProduct;
 
-	@FindBy(xpath = "//span[contains(text(),'Apple iPhone XR (64GB) - Yellow')]")
+	@FindBy(xpath = "//div[@class='a-section aok-relative s-image-fixed-height']/img")
 	private WebElement selectFirstProduct;
 
 	@FindBy(xpath = "(//td[contains(.,'Price')])[2]/../td[2]/span[1]")
