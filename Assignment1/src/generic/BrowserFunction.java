@@ -9,7 +9,7 @@ public class BrowserFunction {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 	}
 
-	protected WebDriver driver;
+	public static WebDriver driver;
 
 	// Open chrome browser and enter url
 	public void openBrowser(String url) {
