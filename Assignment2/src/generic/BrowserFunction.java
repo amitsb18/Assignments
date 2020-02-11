@@ -1,30 +1,26 @@
 package generic;
 
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BrowserFunction {
-	
-static {
+
+	static {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 	}
 
-public static WebDriver driver;
+	public static WebDriver driver;
 
+	// Open chrome browser and enter url
+	public void openBrowser(String url) {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(url);
+	}
 
-public void OpenBrowser(String url) 
-{
-	driver = new ChromeDriver();
-	driver.manage().window().maximize();
-	driver.get(url);
-}
-
-
-public void closeBrowser()
-{
-	driver.quit();
-}
-
+	// close browser
+	public void closeBrowser() {
+		driver.quit();
+	}
 
 }

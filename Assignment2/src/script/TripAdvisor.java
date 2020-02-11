@@ -13,7 +13,7 @@ public class TripAdvisor extends BrowserFunction{
 	@Test
 	public void tripAdvisor() throws InterruptedException {
 		
-		OpenBrowser("https://www.tripadvisor.in");
+		openBrowser("https://www.tripadvisor.in");
 		
 		TripAdvisorPage trip = new TripAdvisorPage(driver);
 		trip.clickSearchTextbox();

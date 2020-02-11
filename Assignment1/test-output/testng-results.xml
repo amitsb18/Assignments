@@ -2,17 +2,17 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="49699" started-at="2020-02-10T18:29:37Z" finished-at="2020-02-10T18:30:27Z">
+  <suite name="Suite" duration-ms="49168" started-at="2020-02-11T03:10:56Z" finished-at="2020-02-11T03:11:45Z">
     <groups>
     </groups>
-    <test name="browserfunction" duration-ms="9" started-at="2020-02-10T18:29:37Z" finished-at="2020-02-10T18:29:37Z">
+    <test name="browserfunction" duration-ms="10" started-at="2020-02-11T03:10:56Z" finished-at="2020-02-11T03:10:56Z">
     </test> <!-- browserfunction -->
-    <test name="GetPrice" duration-ms="49600" started-at="2020-02-10T18:29:37Z" finished-at="2020-02-10T18:30:27Z">
+    <test name="GetPrice" duration-ms="49087" started-at="2020-02-11T03:10:56Z" finished-at="2020-02-11T03:11:45Z">
       <class name="script.GetPrice">
-        <test-method status="PASS" signature="ComparePrice()[pri:1, instance:script.GetPrice@4cc0edeb]" name="ComparePrice" duration-ms="49557" started-at="2020-02-10T18:29:37Z" finished-at="2020-02-10T18:30:27Z">
+        <test-method status="PASS" signature="comparePrice()[pri:1, instance:script.GetPrice@4cc0edeb]" name="comparePrice" duration-ms="49056" started-at="2020-02-11T03:10:56Z" finished-at="2020-02-11T03:11:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ComparePrice -->
+        </test-method> <!-- comparePrice -->
       </class> <!-- script.GetPrice -->
     </test> <!-- GetPrice -->
   </suite> <!-- Suite -->

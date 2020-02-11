@@ -5,7 +5,7 @@
     <classes>
       <class name="script.GetPrice">
         <methods>
-          <include name="ComparePrice"/>
+          <include name="comparePrice"/>
         </methods>
       </class> <!-- script.GetPrice -->
     </classes>
