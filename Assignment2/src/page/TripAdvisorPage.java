@@ -36,6 +36,9 @@ public class TripAdvisorPage extends BrowserFunction {
 	@FindBy(xpath = "//div[@class = 'ui_columns is-mobile result-content-columns']")
 	private WebElement selectFirstResult;
 
+	@FindBy(xpath = "//div[@class= 'sbx_close']")
+	private List<WebElement> takeSurveyPopup;
+
 	@FindBy(xpath = "//a[@class='ui_button primary' and text()='Write a review']")
 	@CacheLookup
 	private WebElement clickOnWritereviewButton;
@@ -79,6 +82,13 @@ public class TripAdvisorPage extends BrowserFunction {
 
 	public void selectFirstResult() {
 		selectFirstResult.click();
+	}
+
+	// This method helps to click on trip survey pop which appears sometimes
+	public void clickOnTakeSurveyPopup() {
+		if (takeSurveyPopup.size() > 0) {
+			takeSurveyPopup.get(0).click();
+		}
 	}
 
 	public void clickOnWritereviewButton() {

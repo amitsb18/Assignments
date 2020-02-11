@@ -23,6 +23,7 @@ public class TripAdvisor extends BrowserFunction {
 		ArrayList<String> tabs1 = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs1.get(1));
 
+		trip.clickOnTakeSurveyPopup();
 		trip.clickOnWritereviewButton();
 
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
