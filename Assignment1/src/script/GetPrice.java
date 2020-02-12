@@ -37,9 +37,10 @@ public class GetPrice extends BrowserFunction {
 
 		openBrowser("https://www.flipkart.com");
 		FindPriceFromFlipkartPage flipkart = new FindPriceFromFlipkartPage(driver);
+		Thread.sleep(5000);
 		flipkart.closeLoginPopup();
 		flipkart.searchProduct("iPhone XR (64GB) - Yellow");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		flipkart.selectProduct();
 
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());

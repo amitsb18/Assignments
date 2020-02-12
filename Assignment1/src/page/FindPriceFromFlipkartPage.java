@@ -34,7 +34,6 @@ public class FindPriceFromFlipkartPage extends BrowserFunction {
 
 	// Declaring methods to perform actions on elements
 	public void closeLoginPopup() {
-
 		if (clickCloseButton.size() > 0) {
 			clickCloseButton.get(0).click();
 		}

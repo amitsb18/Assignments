@@ -2,18 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="50875" started-at="2020-02-11T07:19:34Z" finished-at="2020-02-11T07:20:24Z">
+  <suite name="Default suite" duration-ms="50658" started-at="2020-02-12T13:38:56Z" finished-at="2020-02-12T13:39:47Z">
     <groups>
     </groups>
-    <test name="browserfunction" duration-ms="11" started-at="2020-02-11T07:19:34Z" finished-at="2020-02-11T07:19:34Z">
-    </test> <!-- browserfunction -->
-    <test name="GetPrice" duration-ms="50633" started-at="2020-02-11T07:19:34Z" finished-at="2020-02-11T07:20:24Z">
+    <test name="Default test" duration-ms="50658" started-at="2020-02-12T13:38:56Z" finished-at="2020-02-12T13:39:47Z">
       <class name="script.GetPrice">
-        <test-method status="PASS" signature="comparePrice()[pri:1, instance:script.GetPrice@29ee9faa]" name="comparePrice" duration-ms="50602" started-at="2020-02-11T07:19:34Z" finished-at="2020-02-11T07:20:24Z">
+        <test-method status="PASS" signature="comparePrice()[pri:1, instance:script.GetPrice@60611244]" name="comparePrice" duration-ms="50622" started-at="2020-02-12T13:38:56Z" finished-at="2020-02-12T13:39:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- comparePrice -->
       </class> <!-- script.GetPrice -->
-    </test> <!-- GetPrice -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
