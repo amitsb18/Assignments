@@ -42,8 +42,9 @@ public class FindPriceFromAmazonPage extends BrowserFunction {
 
 	public float getProductPrice() {
 		String amzonInitalPrice = getProductPrice.getText();
-		String amazonsortPrice = amzonInitalPrice.replace("₹ ", "").replace(",", "");
-		float amazonPrice = Float.parseFloat(amazonsortPrice);
+		String amazonsortPrice = amzonInitalPrice.replaceAll("[ \\,]", "");
+		int lengthOfString = amazonsortPrice.length();
+		float amazonPrice = Float.parseFloat(amazonsortPrice.substring(1,lengthOfString));
 		return amazonPrice;
 	}
 }
