@@ -35,7 +35,7 @@ public class FindPriceFromFlipkartPage extends BrowserFunction {
 	// Declaring methods to perform actions on elements
 	public void closeLoginPopup() {
 		if (clickCloseButton.size() > 0) {
-			clickCloseButton.get(0).click();
+			clickCloseButton.get(0).sendKeys(Keys.ESCAPE);
 		}
 	}
 
@@ -53,7 +53,7 @@ public class FindPriceFromFlipkartPage extends BrowserFunction {
 	public float getProductPrice() {
 		wait.until(ExpectedConditions.visibilityOf(getProductPrice));
 		String flipkartInitalPrice = getProductPrice.getText();
-		String flipkartsortPrice = flipkartInitalPrice.replace("₹", "").replace(",", "");
+		String flipkartsortPrice = flipkartInitalPrice.replaceAll("[₹\\,\\ \\?]", "").trim();
 		float flipkartPrice = Float.parseFloat(flipkartsortPrice);
 		return flipkartPrice;
 	}

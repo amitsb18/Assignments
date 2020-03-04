@@ -1,5 +1,8 @@
 package script;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import org.testng.annotations.Test;
 import generic.BrowserFunction;
@@ -33,12 +36,14 @@ public class GetPrice extends BrowserFunction {
 	}
 
 	@Test
-	public float getProductPriceFromFlipkart() throws InterruptedException {
+	public float getProductPriceFromFlipkart() throws InterruptedException, AWTException {
 
 		openBrowser("https://www.flipkart.com");
 		FindPriceFromFlipkartPage flipkart = new FindPriceFromFlipkartPage(driver);
-		Thread.sleep(5000);
-		flipkart.closeLoginPopup();
+		
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_ESCAPE);
+		
 		flipkart.searchProduct("iPhone XR (64GB) - Yellow");
 		Thread.sleep(5000);
 		flipkart.selectProduct();
@@ -59,7 +64,7 @@ public class GetPrice extends BrowserFunction {
 	// Get product price from Amazon and Flipkart and return the product lowest
 	// price
 	@Test(priority = 1)
-	public void comparePrice() throws InterruptedException {
+	public void comparePrice() throws InterruptedException, AWTException {
 
 		amazonPrice = getProductPriceFromAmazon();
 		flipkartPrice = getProductPriceFromFlipkart();
