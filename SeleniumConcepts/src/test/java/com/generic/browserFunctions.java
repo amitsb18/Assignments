@@ -13,12 +13,12 @@ public class browserFunctions {
 	static WebDriver driver;
 
 	@Test(priority = 1)
-	public void browser() {
+	public void setBrowser() {
 		browser = "chrome";
 	}
 
 	@Test(priority = 2)
-	public void openBrowser() {
+	public void setBrowserConfig() {
 		if (browser.contains("chrome")){
 			WebDriverManager.chromedriver().version("80.0.3987.16").setup();
 			driver = new ChromeDriver();
@@ -31,7 +31,7 @@ public class browserFunctions {
 	}
 
 	@Test(priority = 3)
-	public void getCoordinatesValues() {
+	public void automationPratice() {
 		driver.get("http://automationpractice.com/");
 	}
 }
