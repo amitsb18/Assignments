@@ -4,7 +4,7 @@
 3. click on File menu -> choose import option.
 4. from the popup choose maven folder -> click on existing maven project -> click next.
 5. browse the clone maven project.
-6. click finish....
+6. click finish and move to next step
  
 # how to run/import dependencies
 1. Right click on the project.
